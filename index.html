@@ -23,7 +23,8 @@
   /* Add a black background color to the top navigation */
 
   .topnav {
-    background-color: #333;
+    padding: 20px;
+    background-color: #546e7a;
     overflow: hidden;
   }
   /* Style the links inside the navigation bar */
@@ -36,6 +37,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+
+  #photoframe {
+    background-color: #819ca9;
+    padding-top: 50px;
   }
 
   .topnav a {
@@ -63,20 +69,26 @@
 
 <body>
 
-
-
-
-
-
-
+<!--Nav bar programmed in html and styled with CSS-->
   <div class="topnav" id="myTopnav">
-    <a href="#home" id="title">ALAN CLINCH</a>
+    <h1 a href="#home" id="title">ALAN CLINCH</a></h1>
     <a href="#about">CONTACT</a>
     <a href="#contact">PORTFOLIO</a>
     <a href="#news">ABOUT</a>
   </div>
 
 
+<div id="photoframe">
+
+  <div class="container-fluid">
+  <img src="images/polaroid.jpg" alt="..." class=" rounded mx-auto d-block">
+  </div>
+
+  <div class="container-fluid">
+  <h1 class="text-primary text-center">ALAN CLINCH</h1>
+  </div>
+
+</div>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
