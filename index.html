@@ -18,12 +18,15 @@
 </head>
 
 <style>
+  #container {}
 
-#container {
-
-}
+  #websites {
+    background-color: #819ca9;
+    padding: 32px
+  }
 
   /* Controls the padding and alignment in the Navbar*/
+
   .topnav {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -32,6 +35,7 @@
   }
 
   /* Style the links inside the Navbar bar */
+
   #title {
     background-color: #546e7a;
     color: #f2f2f2;
@@ -39,23 +43,25 @@
   }
 
   /* Change the color of links on hover */
+
   .topnav a:hover {
     background-color: #29434e;
     color: white;
   }
 
   /* Add a color to the active/current link */
+
   .topnav a.active {
     background-color: #4CAF50;
     color: white;
   }
 
   /* Add padding and background color around photo */
+
   #photoframe {
     padding: 64px;
     background-color: #819ca9;
   }
-
 </style>
 
 
@@ -64,19 +70,18 @@
   <!-- Image and text -->
 
 
-<div class="container-fluid col-6" id="container">
 
-<nav id="title" class="navbar navbar-toggleable-md navbar-inverse">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+
+<nav id="title" class="container-fluid col-xl-6 navbar navbar-toggleable-md navbar-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand  icon-light" href="#">
     <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
      &nbsp; &nbsp;ALAN CLINCH
   </a>
-
-
-  <div class="topnav collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+  <div class="topnav collapse navbar-collapse justify-content-end" id="navbarToggle">
     <ul class="navbar-nav mt-2 mt-md-0">
       <li class="nav-item active">
         <a class="nav-link" href="#">ABOUT</a>
@@ -92,23 +97,33 @@
 </nav>
 
 
-
-
-
-
-
-<div id="photoframe" class="container-responsive">
-
-  <div>
-  <img src="images/polaroid.jpg" alt="..." class="img-fluid mx-auto d-block">
-  </div>
-
-<ul>
-  <li>test</li>
-  <li>test2</>
-  </ul>
+<div id="photoframe" class="container-fluid col-xl-6">
+    <img src="images/polaroid.jpg" alt="..." class="img-fluid mx-auto d-block">
+</div>
 
 </div>
+  <div class="container-fluid col-xl-6">
+<div class="row" id="websites">
+  <div class="col-lg-4">
+    <figure class="figure">
+      <img src="images/tributesite.jpg" alt="..." class="figure-img img-fluid rounded ">
+      <figcaption class="figure-caption text-center text-white">A tribute site to Nelson Mandela</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-4">
+    <figure class="figure">
+      <img src="images/tributesite.jpg" alt="..." class="figure-img img-fluid rounded ">
+      <figcaption class="figure-caption text-center text-white">Coming soon</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-4">
+    <figure class="figure">
+      <img src="images/tributesite.jpg" alt="..." class="figure-img img-fluid rounded ">
+      <figcaption class="figure-caption text-center text-white">Coming Soon</figcaption>
+    </figure>
+  </div>
+</div>
+
 </div>
 
   <!-- Recommended footers from Bootstrap website -->
