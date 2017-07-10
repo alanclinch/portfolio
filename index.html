@@ -19,17 +19,23 @@
 
 <style>
 
-  /* Style the links inside the navigation bar */
+#container {
+
+}
+
+  /* Controls the padding and alignment in the Navbar*/
+  .topnav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    text-align: right;
+  }
+
+  /* Style the links inside the Navbar bar */
   #title {
     background-color: #546e7a;
     color: #f2f2f2;
     text-align: left;
-  }
-
-  /* Change the color of links on hover */
-  .topnav a {
-    padding: 32px;
-    text-align: right;
   }
 
   /* Change the color of links on hover */
@@ -44,12 +50,12 @@
     color: white;
   }
 
+  /* Add padding and background color around photo */
   #photoframe {
-    padding: 32px;
+    padding: 64px;
     background-color: #819ca9;
-    color: white;
-    padding-top: 50px;
   }
+
 </style>
 
 
@@ -58,6 +64,7 @@
   <!-- Image and text -->
 
 
+<div class="container-fluid col-6" id="container">
 
 <nav id="title" class="navbar navbar-toggleable-md navbar-inverse">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +90,7 @@
     </ul>
   </div>
 </nav>
-</div>
+
 
 
 
@@ -96,9 +103,12 @@
   <img src="images/polaroid.jpg" alt="..." class="img-fluid mx-auto d-block">
   </div>
 
-  <div>
-  </div>
+<ul>
+  <li>test</li>
+  <li>test2</>
+  </ul>
 
+</div>
 </div>
 
   <!-- Recommended footers from Bootstrap website -->
